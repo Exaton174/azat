@@ -23,12 +23,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         # unittest и logging — стандартные библиотеки, установка не требуется
-
     - name: Запуск тестов
       run: python test_logic.py
 
     - name: Проверка работы программы (Dry run)
       run: |
         # Автоматический запуск программы (проверка создания лога)
-        echo "25" | python test_logic.py 
+        echo "25" | python main.py 
         if [ -f app.log ]; then echo "Лог-файл создан!"; else exit 1; fi

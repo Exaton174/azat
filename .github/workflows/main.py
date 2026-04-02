@@ -1,5 +1,3 @@
-
-
 def add(a, b):
     return  a + b
 
@@ -23,7 +21,3 @@ def get_user_number():
 
 if __name__ == "__main__":
     get_user_number()
-
-
-
-
