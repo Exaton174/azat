@@ -15,7 +15,7 @@ def test_add_wrong():
 def get_user_number():
     try:
         num = int(input("Введите число "))
-        num2 = int(input("Введите число на которой хотите делить "))
+     
     except ValueError:
         print("Ошибка! Пажалуйста, введите только число, а не буквы.")
 
